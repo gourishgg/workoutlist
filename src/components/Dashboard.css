@@ -9,6 +9,8 @@
 
 .dashboard-header {
   text-align: left;
+  opacity: 0;
+  animation: fadeSlideDown 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 .dashboard-header h1 {
@@ -27,6 +29,11 @@
   gap: 24px;
 }
 
+.stats-grid > *:nth-child(1) { opacity: 0; animation: fadeSlideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.1s forwards; }
+.stats-grid > *:nth-child(2) { opacity: 0; animation: fadeSlideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards; }
+.stats-grid > *:nth-child(3) { opacity: 0; animation: fadeSlideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.3s forwards; }
+.stats-grid > *:nth-child(4) { opacity: 0; animation: fadeSlideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.4s forwards; }
+
 .dashboard-content {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -40,9 +47,14 @@
   gap: 24px;
 }
 
+.main-col > *:nth-child(1) { opacity: 0; animation: fadeSlideRight 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.3s forwards; }
+.main-col > *:nth-child(2) { opacity: 0; animation: fadeSlideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.4s forwards; }
+
 .side-col {
   position: sticky;
   top: 24px;
+  opacity: 0;
+  animation: fadeSlideLeft 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.4s forwards;
 }
 
 /* Responsive Layout */

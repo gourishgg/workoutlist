@@ -3,6 +3,11 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-8px) scale(1.03);
 }
 
 .stat-card-header {
@@ -17,6 +22,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.3s ease;
+}
+
+.stat-card:hover .stat-icon-wrapper {
+  transform: scale(1.15) rotate(8deg);
 }
 
 .stat-title {
