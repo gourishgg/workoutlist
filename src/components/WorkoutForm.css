@@ -1,0 +1,46 @@
+.form-container {
+  padding: 24px;
+}
+
+.form-title {
+  color: var(--text-primary);
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.workout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-group.row {
+  display: flex;
+  gap: 16px;
+}
+
+@media (max-width: 600px) {
+  .form-group.row {
+    flex-direction: column;
+  }
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+.input-field label {
+  color: var(--text-secondary);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.submit-btn {
+  margin-top: 8px;
+  width: 100%;
+}
