@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import Dashboard from './components/Dashboard';
+import SparksBackground from './components/SparksBackground';
 import type { WorkoutEntry } from './types';
 import './App.css';
 
@@ -54,13 +55,16 @@ function App() {
   };
 
   return (
-    <div className="app-container">
-      <Dashboard 
-        workouts={workouts} 
-        onAddWorkout={handleAddWorkout} 
-        onDeleteWorkout={handleDeleteWorkout} 
-      />
-    </div>
+    <>
+      <SparksBackground />
+      <div className="app-container">
+        <Dashboard 
+          workouts={workouts} 
+          onAddWorkout={handleAddWorkout} 
+          onDeleteWorkout={handleDeleteWorkout} 
+        />
+      </div>
+    </>
   );
 }
 
